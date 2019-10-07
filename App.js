@@ -4,7 +4,7 @@
  *
  * @format
  * @flow
- */
+ 
 
 import React from 'react';
 import {
@@ -111,4 +111,30 @@ const styles = StyleSheet.create({
   },
 });
 
-export default App;
+export default App;*/
+
+import React from 'react';
+import { createStackNavigator } from 'react-navigation';
+import {
+  SafeAreaView,
+  StyleSheet,
+  ScrollView,
+  View,
+  Text,
+  StatusBar,
+} from 'react-native';
+import AppNavigator from './component/AppNavigator'
+// const App1: () => React$Node = () => {
+//   return(
+//     <Text>
+//                 Read the docs to discover what to do next:
+//               </Text>
+//   );
+// };
+export default class App extends React.Component {
+   render() {
+      return(
+        <AppNavigator />
+      );
+   }
+}
